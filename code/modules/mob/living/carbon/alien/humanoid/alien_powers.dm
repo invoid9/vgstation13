@@ -381,10 +381,10 @@ a
 /spell/aoe_turf/alien_hide/cast(list/targets, mob/user)
 	if(user.plane != HIDING_MOB_PLANE)
 		user.plane = HIDING_MOB_PLANE
-		user.visible_message("<span class='danger'>[src] scurries to the ground !</span>", "<span class='alien'>You are now hiding.</span>")
+		user.visible_message("<span class='danger'>[user] scurries to the ground !</span>", "<span class='alien'>You are now hiding.</span>")
 	else
 		user.plane = MOB_PLANE
-		user.visible_message("<span class='warning'>[src] slowly peeks up from the ground...</span>", "<span class='alien'>You have stopped hiding.</span>")
+		user.visible_message("<span class='warning'>[user] slowly peeks up from the ground...</span>", "<span class='alien'>You have stopped hiding.</span>")
 
 /////////////////////////////////////////////
 

@@ -446,6 +446,9 @@
 
 /obj/machinery/disposal/MouseDrop_T(atom/movable/dropping, mob/user)
 
+	if(istype(user, /mob/living/simple_animal)) //Mice can't place stuff in bin
+		return
+
 	if(isAI(user))
 		return
 
